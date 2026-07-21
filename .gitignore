@@ -1,0 +1,32 @@
+# Virtual environments
+myenv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environment variables
+.env
+.env.*
+
+# Dataset
+PlantVillage/
+
+# Model weights (hosted on Hugging Face instead)
+saved_models/*.pth
+saved_models/*.pt
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
