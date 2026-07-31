@@ -2,7 +2,7 @@ services:
   - type: web
     name: crop-disease-backend
     runtime: docker
-    plan: free
+    plan: starter
     branch: main
     dockerfilePath: backend/Dockerfile
     dockerCommand: python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
@@ -17,7 +17,7 @@ services:
   - type: web
     name: crop-disease-frontend
     runtime: static
-    plan: free
+    plan: starter
     branch: main
     rootDir: frontend
     buildCommand: npm install && npm run build
